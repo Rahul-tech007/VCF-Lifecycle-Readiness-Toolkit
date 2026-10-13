@@ -1,0 +1,12 @@
+check_id,status,evidence_reference,completion_notes
+PLAN-001,Not Started,,Confirm exact release-specific path before a real change
+PLAN-002,In Progress,DEMO-INTEROP-001,Example placeholder only; replace with verified release-specific reference
+INV-001,Complete,DEMO-INVENTORY-001,Fictional sanitized inventory reference
+HEALTH-001,Not Started,,No live VCF health check has been performed
+CAP-001,In Progress,DEMO-CAPACITY-001,Fictional evidence placeholder
+BACKUP-001,Not Started,,Backup and recovery evidence not supplied
+COMP-001,Not Started,,Hardware and dependency compatibility not verified
+NET-001,Not Applicable,DEMO-NA-001,Illustrative N/A decision; justify against actual scope
+STOR-001,In Progress,DEMO-STORAGE-001,Fictional evidence placeholder
+CHG-001,Not Started,,No approved change record exists in this synthetic example
+REC-001,Not Started,,Recovery/abort criteria require review

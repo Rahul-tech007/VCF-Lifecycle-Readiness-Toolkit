@@ -4,6 +4,28 @@
 
 > **Scope disclosure:** This is a self-directed documentation and simulation project using fictional data and training-derived planning topics. It is not a live VCF lab, a completed VCF 9.x upgrade, a vendor compatibility checker, or an upgrade automation tool. It does not connect to SDDC Manager, vCenter, NSX, ESXi, or Broadcom APIs.
 
+## Dashboard preview
+
+The screenshot below shows the standalone checklist dashboard using fictional portfolio data. The displayed `NO-GO` is an evidence-tracking result, not a live VCF validation.
+
+![VCF Lifecycle Readiness Dashboard preview](docs/images/dashboard-preview.png)
+
+### Decision scenarios
+
+These screenshots show the three synthetic evidence-tracking outcomes. They are illustrative examples, not live VCF validation.
+
+| NO-GO — blocking evidence gaps | REVIEW — non-blocking work remains |
+|---|---|
+| ![NO-GO scenario dashboard](docs/images/scenario-no-go.png) | ![REVIEW scenario dashboard](docs/images/scenario-review.png) |
+
+**GO — checklist rules satisfied using synthetic placeholders**
+
+![GO scenario dashboard](docs/images/scenario-go.png)
+
+## Scenario-based decision demonstration
+
+Three synthetic status files demonstrate the decision logic: `data/scenarios/no-go.csv`, `data/scenarios/review.csv`, and `data/scenarios/go.csv`. Run all three on Windows, macOS, or Linux with `python scripts/run_scenarios.py`; output goes to `reports/scenarios/`. Read [Scenario Demonstration](docs/scenario-demonstration.md) before interpreting the example `GO` case. Every evidence reference in these scenarios is fictional and must not be treated as technical validation or change authorization.
+
 ## What it demonstrates
 
 - JSON inventory structure validation
@@ -43,6 +65,12 @@ The status describes planning-evidence completeness only. `READY` does **not** m
 
 - `data/sample_environment.json` — fictional example inventory
 - `data/checklist_status.csv` — fictional progress/evidence state for checklist checks
+- `data/scenarios/` — synthetic NO-GO, REVIEW, and GO decision-rule examples
+- `scripts/run_scenarios.py` — cross-platform generation and validation of all three scenarios without changing the default status file
+- `scripts/run-scenarios.ps1` — PowerShell wrapper for scenario generation
+- `docs/images/scenario-no-go.png`, `scenario-review.png`, `scenario-go.png` — scenario screenshots used in this README
+- `docs/images/dashboard-preview.png` — dashboard screenshot used in this README
+- `docs/scenario-demonstration.md` — scenario instructions and limitations
 - `src/vcf_dashboard.py` — CSV-driven dashboard and Markdown report generator
 - `tests/test_vcf_dashboard.py` — dashboard decision-rule tests
 - `src/vcf_readiness.py` — report generator

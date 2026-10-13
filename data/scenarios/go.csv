@@ -1,0 +1,16 @@
+check_id,status,evidence_reference,completion_notes
+PLAN-001,Complete,DEMO-PLAN-001-001,Synthetic placeholder only; does not represent a real technical check or approval.
+PLAN-002,Complete,DEMO-PLAN-002-001,Synthetic placeholder only; does not represent a real technical check or approval.
+INV-001,Complete,DEMO-INV-001-001,Synthetic placeholder only; does not represent a real technical check or approval.
+HEALTH-001,Complete,DEMO-HEALTH-001-001,Synthetic placeholder only; does not represent a real technical check or approval.
+CAP-001,Complete,DEMO-CAP-001-001,Synthetic placeholder only; does not represent a real technical check or approval.
+BACKUP-001,Complete,DEMO-BACKUP-001-001,Synthetic placeholder only; does not represent a real technical check or approval.
+COMP-001,Complete,DEMO-COMP-001-001,Synthetic placeholder only; does not represent a real technical check or approval.
+NET-001,Not Applicable,,Synthetic scope rationale: this example assumes the check is outside the documented change scope.
+STOR-001,Complete,DEMO-STOR-001-001,Synthetic placeholder only; does not represent a real technical check or approval.
+CHG-001,Complete,DEMO-CHG-001-001,Synthetic placeholder only; does not represent a real technical check or approval.
+REC-001,Complete,DEMO-REC-001-001,Synthetic placeholder only; does not represent a real technical check or approval.
+APP-001,Complete,DEMO-APP-001-001,Synthetic placeholder only; does not represent a real technical check or approval.
+EXEC-001,Complete,DEMO-EXEC-001-001,Synthetic placeholder only; does not represent a real technical check or approval.
+POST-001,Complete,DEMO-POST-001-001,Synthetic placeholder only; does not represent a real technical check or approval.
+CLOSE-001,Complete,DEMO-CLOSE-001-001,Synthetic placeholder only; does not represent a real technical check or approval.

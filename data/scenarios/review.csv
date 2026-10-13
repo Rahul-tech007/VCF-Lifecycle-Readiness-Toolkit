@@ -1,0 +1,16 @@
+check_id,status,evidence_reference,completion_notes
+PLAN-001,Complete,DEMO-PLAN-001-001,Synthetic scenario evidence only; replace with verified evidence in an authorized environment.
+PLAN-002,Complete,DEMO-PLAN-002-001,Synthetic scenario evidence only; replace with verified evidence in an authorized environment.
+INV-001,Complete,DEMO-INV-001-001,Synthetic scenario evidence only; replace with verified evidence in an authorized environment.
+HEALTH-001,Complete,DEMO-HEALTH-001-001,Synthetic scenario evidence only; replace with verified evidence in an authorized environment.
+CAP-001,In Progress,DEMO-CAPACITY-001,Non-blocking planning work remains open in this illustrative scenario.
+BACKUP-001,Complete,DEMO-BACKUP-001-001,Synthetic scenario evidence only; replace with verified evidence in an authorized environment.
+COMP-001,Complete,DEMO-COMP-001-001,Synthetic scenario evidence only; replace with verified evidence in an authorized environment.
+NET-001,Complete,DEMO-NET-001-001,Synthetic scenario evidence only; not a real infrastructure validation.
+STOR-001,Complete,DEMO-STOR-001-001,Synthetic scenario evidence only; not a real infrastructure validation.
+CHG-001,Complete,DEMO-CHG-001-001,Synthetic scenario evidence only; replace with verified evidence in an authorized environment.
+REC-001,Complete,DEMO-REC-001-001,Synthetic scenario evidence only; replace with verified evidence in an authorized environment.
+APP-001,Complete,DEMO-APP-001-001,Synthetic scenario evidence only; replace with verified evidence in an authorized environment.
+EXEC-001,Complete,DEMO-EXEC-001-001,Synthetic scenario evidence only; replace with verified evidence in an authorized environment.
+POST-001,Complete,DEMO-POST-001-001,Synthetic scenario evidence only; not a real infrastructure validation.
+CLOSE-001,Complete,DEMO-CLOSE-001-001,Synthetic scenario evidence only; not a real infrastructure validation.
