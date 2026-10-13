@@ -8,9 +8,16 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - run: python -m unittest discover -s tests -v
-      - run: python src/vcf_readiness.py --input data/sample_environment.json --output reports/sample-readiness-report.md
+      - name: Run unit tests
+        run: python -m unittest discover -s tests -v
+      - name: Generate inventory readiness report
+        run: python src/vcf_readiness.py --input data/sample_environment.json --output reports/sample-readiness-report.md
+      - name: Generate checklist dashboard
+        run: python src/vcf_dashboard.py
       - uses: actions/upload-artifact@v4
         with:
-          name: vcf-readiness-report
-          path: reports/sample-readiness-report.md
+          name: vcf-readiness-artifacts
+          path: |
+            reports/sample-readiness-report.md
+            reports/readiness-dashboard.html
+            reports/readiness-dashboard-report.md

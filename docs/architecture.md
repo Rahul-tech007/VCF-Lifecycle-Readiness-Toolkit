@@ -20,3 +20,8 @@ flowchart TD
 ## Future extension boundary
 
 A future read-only integration could query a lab using the current, release-specific VCF APIs and authorized credentials. That should be a separate feature with explicit authentication, least-privilege access, TLS verification, safe secret handling, API version checks, and tests using mocked responses. No such integration is included now.
+
+
+## Checklist dashboard flow
+
+`docs/vcf9-readiness-checklist.csv` defines the check catalogue. `data/checklist_status.csv` stores synthetic per-check progress and evidence references. `src/vcf_dashboard.py` validates and joins these CSVs, applies explicit planning-evidence decision rules, and emits a standalone `reports/readiness-dashboard.html` plus a Markdown report. The browser dashboard is static/self-contained; it does not make network calls or connect to VMware APIs. See `docs/dashboard-guide.md` for schema and semantics.

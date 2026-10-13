@@ -26,3 +26,8 @@ python -m unittest discover -s tests -v
 ## Safety boundary
 
 This tool is offline and read-only. It does not call VCF APIs, collect credentials, validate compatibility, perform prechecks, download bundles, schedule changes, or execute upgrades.
+
+
+## Generate the checklist dashboard
+
+Run `python src/vcf_dashboard.py` from the repository root. Open `reports/readiness-dashboard.html` in a browser. Edit the status/evidence values in `data/checklist_status.csv` to change the sample dashboard. Re-run the command to regenerate the HTML and Markdown outputs. Review `docs/dashboard-guide.md` before interpreting the decision.

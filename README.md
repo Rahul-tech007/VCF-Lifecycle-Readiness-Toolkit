@@ -17,15 +17,34 @@
 Requires Python 3.10+; no third-party packages are required.
 
 ```bash
+# Generate the inventory/change-evidence report
 python src/vcf_readiness.py --input data/sample_environment.json --output reports/readiness-report.md
+
+# Generate a standalone, filterable HTML checklist dashboard and Markdown report
+python src/vcf_dashboard.py
+
+# Run all automated tests
 python -m unittest discover -s tests -v
 ```
+
+Open `reports/readiness-dashboard.html` in a browser. The dashboard supports text search, phase/status filters, and downloading the Markdown report. Edit `data/checklist_status.csv` to track status and evidence references for each checklist ID; the checklist definition remains in `docs/vcf9-readiness-checklist.csv`.
+
+### Dashboard decision rules
+
+- **NO-GO:** a blocking check is `Not Started` or `Blocked`, or is marked `Complete` without an evidence reference.
+- **GO:** every check is `Complete` with an evidence reference, or `Not Applicable` with a written rationale.
+- **REVIEW:** no blocking condition applies, but one or more checks remain in progress or otherwise need review.
+
+The sample status file intentionally includes gaps, so its sample dashboard should show `NO-GO`. This is expected for the synthetic example.
 
 The status describes planning-evidence completeness only. `READY` does **not** mean an upgrade path is supported, a compatibility check passed, or the infrastructure is technically ready. Confirm exact source/target releases and the supported path in current official documentation before any real change.
 
 ## Project layout
 
 - `data/sample_environment.json` — fictional example inventory
+- `data/checklist_status.csv` — fictional progress/evidence state for checklist checks
+- `src/vcf_dashboard.py` — CSV-driven dashboard and Markdown report generator
+- `tests/test_vcf_dashboard.py` — dashboard decision-rule tests
 - `src/vcf_readiness.py` — report generator
 - `tests/` — unit tests
 - `docs/vcf9-lifecycle-planning-guide.md` — VCF 9.x-oriented planning guide and checklist
@@ -33,6 +52,7 @@ The status describes planning-evidence completeness only. `READY` does **not** m
 - `docs/source-material-map.md` — traceability from training topics to original portfolio content
 - `docs/architecture.md` — toolkit architecture and status semantics
 - `docs/operational-runbook.md` — local run instructions
+- `docs/dashboard-guide.md` — dashboard inputs, decision rules, and limitations
 - `.github/workflows/tests.yml` — CI test workflow
 - `reports/sample-readiness-report.md` — generated sample report
 
@@ -53,7 +73,6 @@ API endpoints and behaviour can change. The official API documentation notes tha
 
 ## Future enhancements
 
-1. Add CSV report export and checklist filtering.
-2. Add mocked API-response examples to teach task/status interpretation without credentials.
-3. Consider a separate read-only integration against an authorized lab, with least-privilege access, TLS verification, secret handling, release-specific API checks, and explicit tests.
-4. Never add upgrade execution or production integration without a proper lab and a separately reviewed safety design.
+1. Add mocked API-response examples to teach task/status interpretation without credentials.
+2. Consider a separate read-only integration against an authorized lab, with least-privilege access, TLS verification, secret handling, release-specific API checks, and explicit tests.
+3. Never add upgrade execution or production integration without a proper lab and a separately reviewed safety design.
