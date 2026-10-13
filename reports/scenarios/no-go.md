@@ -3,9 +3,9 @@
 > **Synthetic portfolio example.** This report tracks supplied planning evidence only. It does not validate live VCF health, compatibility, supported upgrade paths, or upgrade eligibility.
 
 - **Planning decision:** NO-GO
-- **Checks in checklist:** 15
+- **Checks in checklist:** 20
 - **Complete with evidence:** 1
-- **Blocking items:** 8
+- **Blocking items:** 11
 - **Items requiring review:** 3
 
 ## Status counts
@@ -16,7 +16,7 @@
 | Complete | 1 |
 | In Progress | 3 |
 | Not Applicable | 1 |
-| Not Started | 10 |
+| Not Started | 15 |
 
 ## Checklist details
 
@@ -37,6 +37,11 @@
 | Execution | EXEC-001 | Complete supported product prechecks | Yes | Not Started | MISSING |  |
 | Validation | POST-001 | Record post-change platform and service validation | No | Not Started | MISSING |  |
 | Closure | CLOSE-001 | Update runbooks known issues and change record | No | Not Started | MISSING |  |
+| Change | CHG-002 | Confirm an approved maintenance window and blackout constraints | Yes | Not Started | MISSING |  |
+| Backup | BACKUP-002 | Confirm backup recoverability and restore-test evidence | Yes | Not Started | MISSING |  |
+| Capacity | CAP-002 | Confirm capacity headroom against documented thresholds | No | Not Started | MISSING |  |
+| Health | HEALTH-002 | Record supported release-specific lifecycle precheck results | Yes | Not Started | MISSING |  |
+| Change | CHG-003 | Confirm stakeholder communication and escalation contacts | No | Not Started | MISSING |  |
 
 ## Decision rules
 

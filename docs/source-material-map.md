@@ -16,3 +16,9 @@ This map records how the training presentation **“VMware vSphere 8 to 9 Upgrad
 ## Source limitation
 
 The presentation's stated scenario is vSphere 8.x to vSphere 9 and its own slides indicate that environment-specific content and architecture screenshots must be customized. It does not, by itself, establish a supported VCF 9.x upgrade path. Keep the original presentation and course materials private unless you have permission to redistribute them. This repository contains an original summary/checklist rather than the source deck.
+
+
+## Expanded portfolio additions
+
+- An original conceptual SVG diagram separates management-domain and workload-domain concepts from the offline planning toolkit. It is explicitly not a deployed topology or release-specific reference design.
+- The checklist now has separate entries for maintenance-window constraints, backup recoverability/restore evidence, workload-specific capacity thresholds, supported lifecycle precheck evidence, and stakeholder communications. These are planning prompts; the toolkit does not collect this evidence from a live environment.

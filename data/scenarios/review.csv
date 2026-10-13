@@ -14,3 +14,8 @@ APP-001,Complete,DEMO-APP-001-001,Synthetic scenario evidence only; replace with
 EXEC-001,Complete,DEMO-EXEC-001-001,Synthetic scenario evidence only; replace with verified evidence in an authorized environment.
 POST-001,Complete,DEMO-POST-001-001,Synthetic scenario evidence only; not a real infrastructure validation.
 CLOSE-001,Complete,DEMO-CLOSE-001-001,Synthetic scenario evidence only; not a real infrastructure validation.
+CHG-002,Complete,DEMO-CHG-002-001,"Synthetic placeholder only; does not represent a real technical check, recovery test, precheck, or approval."
+BACKUP-002,Complete,DEMO-BACKUP-002-001,"Synthetic placeholder only; does not represent a real technical check, recovery test, precheck, or approval."
+CAP-002,Complete,DEMO-CAP-002-001,"Synthetic placeholder only; does not represent a real technical check, recovery test, precheck, or approval."
+HEALTH-002,Complete,DEMO-HEALTH-002-001,"Synthetic placeholder only; does not represent a real technical check, recovery test, precheck, or approval."
+CHG-003,Complete,DEMO-CHG-003-001,"Synthetic placeholder only; does not represent a real technical check, recovery test, precheck, or approval."

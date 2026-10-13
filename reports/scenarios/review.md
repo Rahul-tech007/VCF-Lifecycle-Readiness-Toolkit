@@ -3,8 +3,8 @@
 > **Synthetic portfolio example.** This report tracks supplied planning evidence only. It does not validate live VCF health, compatibility, supported upgrade paths, or upgrade eligibility.
 
 - **Planning decision:** REVIEW
-- **Checks in checklist:** 15
-- **Complete with evidence:** 14
+- **Checks in checklist:** 20
+- **Complete with evidence:** 19
 - **Blocking items:** 0
 - **Items requiring review:** 1
 
@@ -13,7 +13,7 @@
 | Status | Count |
 |---|---:|
 | Blocked | 0 |
-| Complete | 14 |
+| Complete | 19 |
 | In Progress | 1 |
 | Not Applicable | 0 |
 | Not Started | 0 |
@@ -37,6 +37,11 @@
 | Execution | EXEC-001 | Complete supported product prechecks | Yes | Complete | DEMO-EXEC-001-001 | Synthetic scenario evidence only; replace with verified evidence in an authorized environment. |
 | Validation | POST-001 | Record post-change platform and service validation | No | Complete | DEMO-POST-001-001 | Synthetic scenario evidence only; not a real infrastructure validation. |
 | Closure | CLOSE-001 | Update runbooks known issues and change record | No | Complete | DEMO-CLOSE-001-001 | Synthetic scenario evidence only; not a real infrastructure validation. |
+| Change | CHG-002 | Confirm an approved maintenance window and blackout constraints | Yes | Complete | DEMO-CHG-002-001 | Synthetic placeholder only; does not represent a real technical check, recovery test, precheck, or approval. |
+| Backup | BACKUP-002 | Confirm backup recoverability and restore-test evidence | Yes | Complete | DEMO-BACKUP-002-001 | Synthetic placeholder only; does not represent a real technical check, recovery test, precheck, or approval. |
+| Capacity | CAP-002 | Confirm capacity headroom against documented thresholds | No | Complete | DEMO-CAP-002-001 | Synthetic placeholder only; does not represent a real technical check, recovery test, precheck, or approval. |
+| Health | HEALTH-002 | Record supported release-specific lifecycle precheck results | Yes | Complete | DEMO-HEALTH-002-001 | Synthetic placeholder only; does not represent a real technical check, recovery test, precheck, or approval. |
+| Change | CHG-003 | Confirm stakeholder communication and escalation contacts | No | Complete | DEMO-CHG-003-001 | Synthetic placeholder only; does not represent a real technical check, recovery test, precheck, or approval. |
 
 ## Decision rules
 

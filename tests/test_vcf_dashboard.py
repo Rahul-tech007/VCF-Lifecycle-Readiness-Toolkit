@@ -40,5 +40,18 @@ class DashboardTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, "unknown check_id"):
                 load_checklist(ROOT / "docs/vcf9-readiness-checklist.csv", p)
 
+    def test_expanded_checklist_includes_explicit_operational_controls(self):
+        rows = self.load_sample()
+        ids = {row["check_id"] for row in rows}
+        self.assertGreaterEqual(len(rows), 20)
+        self.assertTrue({"CHG-002", "BACKUP-002", "CAP-002", "HEALTH-002", "CHG-003"}.issubset(ids))
+
+    def test_conceptual_architecture_diagram_exists_and_discloses_scope(self):
+        diagram = ROOT / "docs/images/vcf-conceptual-architecture.svg"
+        self.assertTrue(diagram.is_file())
+        content = diagram.read_text(encoding="utf-8")
+        self.assertIn("Conceptual Architecture", content)
+        self.assertIn("no live integration", content)
+
 if __name__ == "__main__":
     unittest.main()

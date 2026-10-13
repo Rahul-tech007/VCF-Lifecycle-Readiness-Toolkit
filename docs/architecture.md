@@ -25,3 +25,8 @@ A future read-only integration could query a lab using the current, release-spec
 ## Checklist dashboard flow
 
 `docs/vcf9-readiness-checklist.csv` defines the check catalogue. `data/checklist_status.csv` stores synthetic per-check progress and evidence references. `src/vcf_dashboard.py` validates and joins these CSVs, applies explicit planning-evidence decision rules, and emits a standalone `reports/readiness-dashboard.html` plus a Markdown report. The browser dashboard is static/self-contained; it does not make network calls or connect to VMware APIs. See `docs/dashboard-guide.md` for schema and semantics.
+
+
+## Conceptual VCF architecture diagram
+
+See [the original conceptual diagram](images/vcf-conceptual-architecture.svg). It shows a simplified management domain, workload/VI domains, lifecycle orchestration, and cross-domain dependencies. Component placement and availability are design- and release-dependent; use current official guidance for a real deployment. The readiness toolkit is shown separately because it does not connect to live infrastructure.

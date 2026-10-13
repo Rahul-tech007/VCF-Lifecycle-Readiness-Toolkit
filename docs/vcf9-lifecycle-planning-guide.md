@@ -32,6 +32,11 @@ This repository uses fictional data only. The toolkit does not connect to SDDC M
 - [ ] Backup and recovery evidence is current and restore/recovery responsibilities are understood.
 - [ ] Certificate, DNS, NTP, identity, licensing, and repository/bundle prerequisites are checked where applicable.
 - [ ] Network paths (management, vMotion, storage, workload networks) and storage/datastore health are validated where applicable.
+- [ ] Maintenance window, blackout constraints, timezone, outage expectations, and duration are explicitly recorded.
+- [ ] Backup/recovery ownership and recoverability or restore-test evidence are recorded; a successful backup job alone is not assumed to prove recovery.
+- [ ] Capacity headroom is assessed against documented workload-specific thresholds.
+- [ ] Supported release-specific lifecycle precheck results and remediation dispositions are recorded.
+- [ ] Stakeholder communications and escalation contacts are prepared using the approved change process.
 - [ ] Maintenance window, change record, stakeholder communications, and CAB approval are recorded.
 - [ ] Execution sequence, success criteria, abort criteria, escalation contacts, and recovery plan are documented.
 - [ ] Official product prechecks are completed and results reviewed in the target environment.

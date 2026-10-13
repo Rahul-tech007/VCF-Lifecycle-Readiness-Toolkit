@@ -10,3 +10,8 @@ NET-001,Not Applicable,DEMO-NA-001,Illustrative N/A decision; justify against ac
 STOR-001,In Progress,DEMO-STORAGE-001,Fictional evidence placeholder
 CHG-001,Not Started,,No approved change record exists in this synthetic example
 REC-001,Not Started,,Recovery/abort criteria require review
+CHG-002,Not Started,,Maintenance window not evidenced in synthetic sample
+BACKUP-002,Not Started,,Restore/recovery evidence not supplied
+CAP-002,In Progress,DEMO-CAPACITY-THRESHOLDS-001,Fictional placeholder; actual thresholds not verified
+HEALTH-002,Not Started,,No live or release-specific precheck has been run
+CHG-003,Not Started,,Stakeholder communication evidence not supplied

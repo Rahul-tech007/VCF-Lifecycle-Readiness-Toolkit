@@ -4,6 +4,12 @@
 
 > **Scope disclosure:** This is a self-directed documentation and simulation project using fictional data and training-derived planning topics. It is not a live VCF lab, a completed VCF 9.x upgrade, a vendor compatibility checker, or an upgrade automation tool. It does not connect to SDDC Manager, vCenter, NSX, ESXi, or Broadcom APIs.
 
+## Conceptual VCF architecture
+
+This original diagram illustrates common VCF concepts at a high level. Exact components, storage options, domain topology, and lifecycle capabilities vary by release and design. It is not a reference design for a specific VCF 9.x deployment. The planning toolkit shown at the bottom is deliberately separate from the infrastructure and has no live API connection.
+
+![Conceptual VCF architecture](docs/images/vcf-conceptual-architecture.svg)
+
 ## Dashboard preview
 
 The screenshot below shows the standalone checklist dashboard using fictional portfolio data. The displayed `NO-GO` is an evidence-tracking result, not a live VCF validation.
@@ -29,7 +35,7 @@ Three synthetic status files demonstrate the decision logic: `data/scenarios/no-
 ## What it demonstrates
 
 - JSON inventory structure validation
-- Change-readiness evidence checks for ownership, maintenance window, backup/recovery evidence, health checks, compatibility references, rollback planning, and approval
+- Expanded lifecycle planning checklist for release/BOM compatibility, inventory, health and supported prechecks, capacity, backup and recoverability, maintenance windows, stakeholder communications, network/storage dependencies, rollback/abort criteria, approvals, post-change validation, and closure
 - Markdown report generation
 - Unit tests and GitHub Actions CI
 - VCF lifecycle planning documentation based on sanitized learning notes and public Broadcom API references
