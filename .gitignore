@@ -1,0 +1,6 @@
+__pycache__/\n*.py[cod]\n.venv/\n.env\n.env.*\n!.env.example\n
+# Python generated files
+__pycache__/
+*.py[cod]
+.venv/
+venv/

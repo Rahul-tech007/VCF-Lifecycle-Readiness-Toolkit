@@ -1,0 +1,66 @@
+{
+  "environment": {
+    "name": "VCF-LAB-01",
+    "environment_type": "SIMULATED",
+    "vcf_release": "Example only - verify deployed release",
+    "data_classification": "Synthetic / non-production"
+  },
+  "components": [
+    {
+      "name": "SDDC Manager",
+      "role": "Lifecycle orchestration",
+      "version": "example-version",
+      "owner": "Platform Team"
+    },
+    {
+      "name": "Management vCenter",
+      "role": "Virtualization management",
+      "version": "example-version",
+      "owner": "Virtualization Team"
+    },
+    {
+      "name": "ESXi Cluster A",
+      "role": "Compute",
+      "version": "example-version",
+      "owner": "Virtualization Team"
+    },
+    {
+      "name": "NSX Manager",
+      "role": "Network virtualization",
+      "version": "example-version",
+      "owner": "Network Team"
+    },
+    {
+      "name": "vSAN Cluster A",
+      "role": "Storage",
+      "version": "example-version",
+      "owner": "Storage Team"
+    }
+  ],
+  "change_records": [
+    {
+      "id": "CHG-001",
+      "title": "Example lifecycle update planning",
+      "target": "Management domain components",
+      "owner": "Platform Team",
+      "maintenance_window": "Sample window only",
+      "backup_evidence": "Synthetic reference LAB-BACKUP-001",
+      "health_check_evidence": "Sample pre-change checklist",
+      "compatibility_reference": "Replace with official release documentation",
+      "rollback_plan": "Document recovery point and approved runbook",
+      "change_approval": "Pending"
+    },
+    {
+      "id": "CHG-002",
+      "title": "Example host lifecycle planning",
+      "target": "ESXi Cluster A",
+      "owner": "",
+      "maintenance_window": "",
+      "backup_evidence": "",
+      "health_check_evidence": "Not recorded",
+      "compatibility_reference": "",
+      "rollback_plan": "",
+      "change_approval": "Not requested"
+    }
+  ]
+}
