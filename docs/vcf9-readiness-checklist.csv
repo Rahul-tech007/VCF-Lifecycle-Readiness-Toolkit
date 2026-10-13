@@ -1,0 +1,16 @@
+phase,check_id,check,required_evidence,owner_role,blocking_if_missing,notes
+Plan,PLAN-001,Confirm exact source and target VCF releases,Official release-specific upgrade path reference,Platform owner,Yes,Do not infer from a generic vSphere upgrade deck
+Plan,PLAN-002,Confirm component BOM and interoperability,Official compatibility or interoperability reference,Platform owner,Yes,Record exact component versions in private records only
+Inventory,INV-001,Review management and workload domain inventory,Sanitized inventory reference,VCF administrator,Yes,Use fictional or sanitized data in this public repository
+Health,HEALTH-001,Review domain and component health,Precheck or health evidence reference,VCF administrator,Yes,Toolkit does not perform live health checks
+Capacity,CAP-001,Review capacity and workload constraints,Capacity report reference,Compute and storage,No,Determine applicability to the planned change
+Backup,BACKUP-001,Confirm backup and recovery evidence,Backup evidence and recovery owner,Backup owner,Yes,Validate recoverability according to product guidance
+Compatibility,COMP-001,Review hardware firmware drivers and dependencies,Compatibility evidence reference,Hardware and platform teams,Yes,Use official release-specific references
+Network,NET-001,Validate management vMotion storage and workload paths,Network validation record,Network team,No,Mark non-applicable checks explicitly
+Storage,STOR-001,Review datastore multipathing and vSAN health where applicable,Storage validation record,Storage team,No,Mark non-applicable checks explicitly
+Change,CHG-001,Confirm owner maintenance window and stakeholder communication,Approved change record,Change manager,Yes,Use a fictional change ID in public examples
+Recovery,REC-001,Document recovery and abort criteria,Approved recovery runbook reference,Platform owner,Yes,Do not assume snapshots are universal rollback
+Approval,APP-001,Obtain required change approval,Approval record reference,Change manager,Yes,Toolkit status is not approval
+Execution,EXEC-001,Complete supported product prechecks,Precheck task/result reference,VCF administrator,Yes,Use supported release-specific workflow in the real environment
+Validation,POST-001,Record post-change platform and service validation,Validation and service-owner sign-off,Platform and application owners,No,Actual checks depend on scope and design
+Closure,CLOSE-001,Update runbooks known issues and change record,Change closure evidence,Platform owner,No,Sanitize evidence before publishing
